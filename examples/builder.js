@@ -1,3 +1,4 @@
+require('dotenv').config()
 const path = require('path')
 const fs = require('fs').promises
 const { builder, Build } = require('mineflayer-builder')
@@ -5,13 +6,14 @@ const { Schematic } = require('prismarine-schematic')
 const { pathfinder } = require('mineflayer-pathfinder')
 const mineflayer = require('mineflayer')
 const mineflayerViewer = require('prismarine-viewer').mineflayer
-const { HOST, USERNAME, PASSWORD } = process.env;
+
+const { HOST, EMAIL, PASSWORD } = process.env;
 
 const bot = mineflayer.createBot({
   host: HOST,
   port: '25565',
   auth: 'microsoft',
-  username: USERNAME,
+  username: EMAIL,
   password: PASSWORD
 })
 
