@@ -8,11 +8,11 @@ const mineflayerViewer = require('prismarine-viewer').mineflayer
 const { HOST, USERNAME, PASSWORD } = process.env;
 
 const bot = mineflayer.createBot({
-  host: process.env.HOST,
+  host: HOST,
   port: '25565',
   auth: 'microsoft',
-  username: process.env.USERNAME,
-  password: process.env.PASSWORD
+  username: USERNAME,
+  password: PASSWORD
 })
 
 bot.loadPlugin(pathfinder)
