@@ -1,0 +1,28 @@
+{
+  "name": "mineflayer-builder",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard",
+    "fix": "standard --fix"
+  },
+  "author": "Karang",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "minecraft-data": "^3.0.0",
+    "mineflayer-pathfinder": "github:PrismarineJS/mineflayer-pathfinder",
+    "prismarine-block": "^1.7.3",
+    "prismarine-item": "^1.5.0",
+    "prismarine-schematic": "^1.2.0",
+    "prismarine-world": "^3.3.1",
+    "vec3": "^0.1.7"
+  },
+  "devDependencies": {
+    "mineflayer": "PrismarineJS/mineflayer",
+    "mineflayer-builder": "file:",
+    "prismarine-viewer": "^1.13.3",
+    "standard": "^17.0.0"
+  }
+}
